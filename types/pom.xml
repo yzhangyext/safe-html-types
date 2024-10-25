@@ -36,6 +36,18 @@
     </dependency>
 
     <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.10.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.google.truth</groupId>
+      <artifactId>truth</artifactId>
+      <version>1.4.4</version>
+    </dependency>
+
+    <dependency>
       <groupId>com.google.jsinterop</groupId>
       <artifactId>jsinterop-annotations</artifactId>
       <version>1.0.1</version>
@@ -134,23 +146,6 @@
                 <argument>${project.build.outputDirectory}</argument>
               </arguments>
             </configuration>
-          </execution>
-        </executions>
-      </plugin>
-
-      <plugin>
-        <groupId>com.comoyo.maven.plugins</groupId>
-        <artifactId>protoc-bundled-plugin</artifactId>
-        <configuration>
-          <inputDirectories>
-            <inputDirectory>${project.parent.basedir}/proto/src/main/protobuf</inputDirectory>
-          </inputDirectories>
-        </configuration>
-        <executions>
-          <execution>
-            <goals>
-              <goal>run</goal>
-            </goals>
           </execution>
         </executions>
       </plugin>
